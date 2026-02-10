@@ -7,8 +7,8 @@ export const modelConfigs = [
   },
   {
     model: "deepseek-v3-250324",
-    apiKey: "DEEPSEEK_API_KEY",
-    baseURL: "https://api.deepseek.com"
+    apiKey: "ARK_API_KEY",
+    baseURL: "https://ark.cn-beijing.volces.com/api/v3"
   },
   {
     model: "hunyuan-turbos-latest",
@@ -16,9 +16,24 @@ export const modelConfigs = [
     baseURL: "https://api.hunyuan.cloud.tencent.com/v1"
   },
   {
-    model: "doubao-1-5-pro-32k-250115",//豆包模型|火山引擎接入点（改成自己的）
+    model: "doubao-1-5-lite-32k-250115",//豆包模型|火山引擎接入点（改成自己的）
     apiKey: "ARK_API_KEY",
     baseURL: "https://ark.cn-beijing.volces.com/api/v3"
+  },
+  {
+    model: "ep-20250306223646-szzkw",//deepseekv火山引擎接入点（改成自己的）
+    apiKey: "ARK_API_KEY1",
+    baseURL: "https://ark.cn-beijing.volces.com/api/v3"
+  },
+  {
+    model: "glm-4-air",
+    apiKey: "GLM_API_KEY",
+    baseURL: "https://open.bigmodel.cn/api/paas/v4/"
+  },
+  {
+    model: "qwen-turbo",//调度模型
+    apiKey: "DASHSCOPE_API_KEY", // 这里存储环境变量的 key 名称
+    baseURL: "https://dashscope.aliyuncs.com/compatible-mode/v1"
   },
   {
     model: "deepseek-chat",
@@ -26,8 +41,13 @@ export const modelConfigs = [
     baseURL: "https://api.deepseek.com/v1"
   },
   {
+    model: "moonshot-v1-8k",
+    apiKey: "KIMI_API_KEY",
+    baseURL: "https://api.moonshot.cn/v1"
+  },
+  {
     model: "ernie-3.5-128k",
-    apiKey: "QIANFAN_API_KEY",
+    apiKey: "BAIDU_API_KEY",
     baseURL: "https://qianfan.baidubce.com/v2"
   }
 ] as const;
